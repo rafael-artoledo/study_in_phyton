@@ -19,7 +19,7 @@ while True:
         for index, item in enumerate(grocery_list):
             try:
                 erase_item = int(erase_item)
-            except:
+            except TypeError:
                 os.system('cls')
                 print('Just number, please.')
                 continue 
